@@ -1,0 +1,118 @@
+% a mashup of hipstercv, friggeri and twenty cv
+\documentclass[lighthipster]{simplehipstercv}
+\usepackage[utf8]{inputenc}
+\usepackage[default]{raleway}
+\usepackage[margin=1cm, a4paper]{geometry}
+
+\newlength{\rightcolwidth}
+\newlength{\leftcolwidth}
+\setlength{\leftcolwidth}{0.23\textwidth}
+\setlength{\rightcolwidth}{0.75\textwidth}
+
+\title{New Simple CV}
+\author{\LaTeX{} Ninja}
+\date{June 2019}
+
+\pagestyle{empty}
+\begin{document}
+
+\thispagestyle{empty}
+
+\section*{Start}
+\simpleheader{headercolour}{Raimundo}{Glasner}{Estudiante de ingenieria industrial}{white}
+
+\subsection*{}
+\vspace{4em}
+
+\setlength{\columnsep}{1.5cm}
+\columnratio{0.23}[0.75]
+\begin{paracol}{2}
+\hbadness5000
+
+\paracolbackgroundoptions
+
+\footnotesize
+{\setasidefontcolour
+\flushright
+\begin{center}
+    \roundpic{image.png}
+\end{center}
+
+\bg{cvgreen}{white}{¿Quién soy?}\\[0.5em]
+
+{\footnotesize
+Me interesan la tecnologia, el emprendedurismo y las startups. Estoy dispuesto a aprender y desarrollarme en cualquier area }
+\bigskip
+
+\bg{cvgreen}{white}{Sobre mí} \\[0.5em]
+Raimundo Glasner Bonfanti
+
+Nacionalidad: Argentino 
+
+Fecha de nacimiento: 28/03/2006
+
+\bigskip
+
+\bg{cvgreen}{white}{Intereses} \\[0.5em]
+
+Tecnología ~•~ Emprendedurismo ~•~ Startups ~•~ Deporte ~•~ Ciencia
+
+\bigskip
+
+\vspace{4em}
+
+\bg{cvgreen}{white}{Contacto/Redes} \\[0.5em]
+\infobubble{\faGithub}{cvgreen}{white}{RaimundoGlasner}
+\infobubble{\faWhatsapp}{cvgreen}{white}{2614606883}
+\infobubble{\faAt}{cvgreen}{white}{perigb001@gmail.com}
+
+\phantom{turn the page}
+\phantom{turn the page}
+}
+
+\switchcolumn
+
+\small
+\section*{Historia academica}
+
+\begin{tabular}{r| p{0.5\textwidth} c}
+    \cvevent{2011--2018}{Educacion primaria}{Colegio Rainbow}{Mendoza  \color{cvred}}{Estudié en el colegio Rainbow, doble turno, ingles y español}{}\\
+    \cvevent{2019--2023}{Educación secundarial}{Departamento de Aplicacion Docente}{ \color{cvred}}{Bachiller en Ciencias Naturales}{}\\
+    \cvevent{2011--2018}{Educacion Universitaria}{Ing. Industrial}{Uncuyo  \color{cvred}}{Estoy en tercer año, llevo la carrera al día}{}\\
+\end{tabular}
+\vspace{3em}
+
+\begin{minipage}[t]{0.35\textwidth}
+\section*{Promedios y examenes}
+\begin{tabular}{r p{0.6\textwidth} c}
+    \cvdegree{2018}{Promedio de primaria}{9.97}{\color{headerblue}}{}{} \\
+    \cvdegree{1715}{Promedio de secundaria}{9.55}{ \color{headerblue}}{}{} \\
+    \cvdegree{1720}{Ingles}{First Certificate}{Nivel B2  \color{headerblue}}{}{}
+\end{tabular}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.3\textwidth}
+\section*{Habilidades}
+\begin{tabular}{r @{\hspace{0.5em}}l}
+     \bg{skilllabelcolour}{iconcolour}{Liderazgo} &  \barrule{0.4}{0.5em}{cvpurple}\\
+     \bg{skilllabelcolour}{iconcolour}{Comunicación} & \barrule{0.55}{0.5em}{cvgreen} \\
+     \bg{skilllabelcolour}{iconcolour}{Ingles} & \barrule{0.5}{0.5em}{cvpurple} \\
+     \bg{skilllabelcolour}{iconcolour}{Mathlab} & \barrule{0.25}{0.5em}{cvpurple} \\
+     \bg{skilllabelcolour}{iconcolour}{Wordpress} & \barrule{0.35}{0.5em}{cvgreen} \\
+\end{tabular}
+\end{minipage}
+
+\section*{Experiencia}
+\begin{tabular}{r| p{0.5\textwidth} c}
+    \cvevent{2022-2023}{TheHoodieBasement}{E-commerce}{}{Administracion general, desarrollo web con wordpress, administracion de redes sociales. }{} \\
+    \cvevent{2026}{AArEII}{Voluntariado}{ }{Representando mendocino de la Asociación Argentina de Estudiantes de Ingenieria Industrial (AArEII)}{} \\
+    \cvevent{2026}{UnCuyo}{Ayudante de cátedra}{ }{Ayudante de cátedra de Métodos Numéricos y Programación}{} \\
+\end{tabular}
+
+\end{paracol}
+
+%------------------------------------------------------------------
+% SEGUNDA PÁGINA: solo comentarios, sin sidebar ni header complejo
+%------------------------------------------------------------------
+
+
+\end{document}
